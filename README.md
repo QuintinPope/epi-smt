@@ -23,7 +23,7 @@ C++ requirements:
 - cvc4 (install via pysmt-install --cvc4)
 
 This tool provides the decide_epidemic() and decide_quant_epidemic() methods. decide_epidemic() accepts the arguments ’source’, ’size’, ’m’, ’p’, ’limit’, ’target’, ’timesteps’, and ’p_infect’. 
-’source’ can either be a path to a NetworkX graph adjlist file for an undirected graph or the string ’generate’. If it’s the string ’generate’, then the tool generate a Watts-Strogatz graph using the provided size, m and p parameters. Otherwise, it ignores size, m and p. 
+’source’ can either be a path to a NetworkX graph adjlist file for an undirected graph or the string ’generate’. If it’s the string ’generate’, then the tool generate a [Watts-Strogatz](https://en.wikipedia.org/wiki/Watts%E2%80%93Strogatz_model) graph using the provided size, m and p parameters. Otherwise, it ignores size, m and p. 
 ’limit’ and ’target’ decide the limit for the number of initial infected and the target for the number of final infected, respectively. 
 ’timesteps’, and ’p_infect’ control how many timesteps the epidemic is simulated to progress for and the probability of infection spread per timestep.
 
