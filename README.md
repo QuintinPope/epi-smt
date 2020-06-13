@@ -34,7 +34,7 @@ Calls to decide_epidemic() return a tuple containing a boolean indicating the sa
 Example usage:
 
 ```
-from epismt import decide epidemic
+from epismt import decide_epidemic
 answer, model = decide_epidemic(source='generate', size=20, m=4, p=0.1, limit=2, target=15, timesteps=2, p_infect=1)
 print('Solution exists:', answer)
 print('\nSolution:')
