@@ -35,100 +35,55 @@ Example usage:
 
 ```
 from epismt import decide epidemic
-
 answer, model = decide_epidemic(source='generate', size=20, m=4, p=0.1, limit=2, target=15, timesteps=2, p_infect=1)
-
 print('Solution exists:', answer)
-
 print('\nSolution:')
-
 print(model)
 ```
 
 Output:
-
-
+```
 Solution exists: True
 
-
 Solution:
-
 final_int_19 := 0
-
 final_int_18 := 0
-
 final_int_17 := 0
-
 final_int_16 := 1
-
 final_int_15 := 0
-
 final_int_14 := 1
-
 final_int_13 := 1
-
 final_int_12 := 1
-
 final_int_11 := 1
-
 final_int_10 := 1
-
 final_int_9 := 1
-
 final_int_8 := 1
-
 final_int_7 := 1
-
 final_int_6 := 1
-
 final_int_5 := 1
-
 final_int_4 := 1
-
 final_int_3 := 1
-
 final_int_2 := 1
-
 final_int_1 := 0
-
 final_int_0 := 1
-
 init_int_19 := 0
-
 init_int_18 := 0
-
 init_int_17 := 0
-
 init_int_16 := 0
-
 init_int_15 := 0
-
 init_int_14 := 0
-
 init_int_13 := 0
-
 init_int_12 := 1
-
 init_int_11 := 0
-
 init_int_10 := 0
-
 init_int_9 := 0
-
 init_int_8 := 0
-
 init_int_7 := 0
-
 init_int_6 := 1
-
 init_int_5 := 0
-
 init_int_4 := 0
-
 init_int_3 := 0
-
 init_int_2 := 0
-
 init_int_1 := 0
-
 init_int_0 := 0
+```
