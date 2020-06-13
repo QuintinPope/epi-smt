@@ -27,7 +27,7 @@ This tool provides the decide_epidemic() and decide_quant_epidemic() methods. de
 ’limit’ and ’target’ decide the limit for the number of initial infected and the target for the number of final infected, respectively. 
 ’timesteps’, and ’p_infect’ control how many timesteps the epidemic is simulated to progress for and the probability of infection spread per timestep.
 
-Calls to decide_epidemic() return a tuple containing a boolean indicating the satisfiability of the associated SMT problem and (if the problem is satisfiable) an assignment of variables for the SMT problem. decide_quant_epidemic() has the same arguments as decide_epidemic(), with the addition of ’n_vaccinate’, which determines the number of allowed vaccines. decide_quant_epidemic() returns a tuple containing a boolean indicating the satisfiability of the associated quantified SMT problem and (if the problem is satisfiable) an assignment of variables for the problem.
+Calls to decide_epidemic() return a tuple containing a boolean indicating the satisfiability of the associated SMT problem and (if the problem is satisfiable) an assignment of variables for the SMT problem. decide_quant_epidemic() has the same arguments as decide_epidemic(), with the addition of ’n_vaccinate’, which determines the number of allowed vaccines. decide_quant_epidemic() returns a tuple containing a boolean indicating the satisfiability of the associated quantified SMT problem and (if the problem is satisfiable) an assignment of variables for the problem. Note that currently decide_quantified_epidemic() incorrectly states that all vaccination problems are unsatisfiable.
 
 
 
