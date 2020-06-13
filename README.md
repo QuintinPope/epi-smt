@@ -28,3 +28,105 @@ This tool provides the decide_epidemic() and decide_quant_epidemic() methods. de
 ’timesteps’, and ’p_infect’ control how many timesteps the epidemic is simulated to progress for and the probability of infection spread per timestep.
 
 Calls to decide_epidemic() return a tuple containing a boolean indicating the satisfiability of the associated SMT problem and (if the problem is satisfiable) an assignment of variables for the SMT problem. decide_quant_epidemic() has the same arguments as decide_epidemic(), with the addition of ’n_vaccinate’, which determines the number of allowed vaccines. decide_quant_epidemic() returns a tuple containing a boolean indicating the satisfiability of the associated quantified SMT problem and (if the problem is satisfiable) an assignment of variables for the problem.
+
+
+
+Example usage:
+
+
+from epismt import decide epidemic
+
+answer, model = decide_epidemic(source='generate', size=20, m=4, p=0.1, limit=2, target=15, timesteps=2, p_infect=1)
+
+print('Solution exists:', answer)
+
+print('\nSolution:')
+
+print(model)
+
+
+
+Solution exists: True
+
+
+Solution:
+
+final_int_19 := 0
+
+final_int_18 := 0
+
+final_int_17 := 0
+
+final_int_16 := 1
+
+final_int_15 := 0
+
+final_int_14 := 1
+
+final_int_13 := 1
+
+final_int_12 := 1
+
+final_int_11 := 1
+
+final_int_10 := 1
+
+final_int_9 := 1
+
+final_int_8 := 1
+
+final_int_7 := 1
+
+final_int_6 := 1
+
+final_int_5 := 1
+
+final_int_4 := 1
+
+final_int_3 := 1
+
+final_int_2 := 1
+
+final_int_1 := 0
+
+final_int_0 := 1
+
+init_int_19 := 0
+
+init_int_18 := 0
+
+init_int_17 := 0
+
+init_int_16 := 0
+
+init_int_15 := 0
+
+init_int_14 := 0
+
+init_int_13 := 0
+
+init_int_12 := 1
+
+init_int_11 := 0
+
+init_int_10 := 0
+
+init_int_9 := 0
+
+init_int_8 := 0
+
+init_int_7 := 0
+
+init_int_6 := 1
+
+init_int_5 := 0
+
+init_int_4 := 0
+
+init_int_3 := 0
+
+init_int_2 := 0
+
+init_int_1 := 0
+
+init_int_0 := 0
