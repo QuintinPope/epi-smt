@@ -16,7 +16,6 @@ Original file is located at
 import random
 import networkx
 import pysmt
-import time
 
 from pysmt.shortcuts import Symbol, And, GE, LT, Plus, Equals, Int, get_model, Implies, LE, Or, Bool, Not, Exists, ForAll
 from pysmt.typing import INT, BOOL
