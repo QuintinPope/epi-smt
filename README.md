@@ -6,21 +6,21 @@ I also intended this project to solve a vaccination-based variant of the problem
 
 Python requirements:
 
-random
+- random
 
-networkx
+- networkx
 
-pysmt
+- pysmt
 
 C++ requirements:
 
-gmp3-devel
+- gmp3-devel
 
-swig
+- swig
 
-msat (install via pysmt-install --msat)
+- msat (install via pysmt-install --msat)
 
-cvc4 (install via pysmt-install --cvc4)
+- cvc4 (install via pysmt-install --cvc4)
 
 This tool provides the decide_epidemic() and decide_quant_epidemic() methods. decide_epidemic() accepts the arguments ’source’, ’size’, ’m’, ’p’, ’limit’, ’target’, ’timesteps’, and ’p_infect’. 
 ’source’ can either be a path to a NetworkX graph adjlist file for an undirected graph or the string ’generate’. If it’s the string ’generate’, then the tool generate a Watts-Strogatz graph using the provided size, m and p parameters. Otherwise, it ignores size, m and p. 
@@ -33,7 +33,7 @@ Calls to decide_epidemic() return a tuple containing a boolean indicating the sa
 
 Example usage:
 
-
+```
 from epismt import decide epidemic
 
 answer, model = decide_epidemic(source='generate', size=20, m=4, p=0.1, limit=2, target=15, timesteps=2, p_infect=1)
@@ -43,7 +43,9 @@ print('Solution exists:', answer)
 print('\nSolution:')
 
 print(model)
+```
 
+Output:
 
 
 Solution exists: True
