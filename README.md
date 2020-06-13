@@ -5,14 +5,21 @@ This is a python project that evaluates the potential worst case spread of an ep
 I also intended this project to solve a vaccination-based variant of the problem, where we have an integer n_vaccinate and want to know if it's possible to vaccinate no more than n_vaccinate nodes and thereby ensure that there does not exist any subset of limit of fewer nodes that would cause target or more final infections. I intended to solve this problem by reducing it to quantified SMT, but this functionality does not currently work.
 
 Python requirements:
+
 random
+
 networkx
+
 pysmt
 
 C++ requirements:
+
 gmp3-devel
+
 swig
+
 msat (install via pysmt-install --msat)
+
 bdd (install via pysmt-install --bdd)
 
 This tool provides the decide_epidemic() and decide_quant_epidemic() methods. decide_epidemic() accepts the arguments ’source’, ’size’, ’m’, ’p’, ’limit’, ’target’, ’timesteps’, and ’p_infect’. 
